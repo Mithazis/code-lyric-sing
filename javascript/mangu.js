@@ -2,7 +2,7 @@
 // pastikan sudah install node
 // buka terminal kemudian copas :
 
-// node javascript/mangu.js
+// node mangu.js
 
 
 

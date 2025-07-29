@@ -2,7 +2,7 @@
 // pastikan sudah install node
 // buka terminal kemudian copas :
 
-// node javascript/Die-with-a-smile.js
+// node Die-with-a-smile.js
 
 
 
