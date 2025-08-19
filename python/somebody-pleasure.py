@@ -1,55 +1,58 @@
 #  cara menjalankan 
 #  pastikan sudah install python
 #  tinggal click kanan kemudian run python
-#  atau buka terminal kemudian copas : python tak-dianggap.py
+#  atau buka terminal kemudian copas : python somebody-pleasure.py
 
 
 import time
 import os
 import sys
 
-TEXT_SPEED = 0.07
+TEXT_SPEED = 0.02
 term_width = 70
 INDENT = 2
 
 lyrics = [
-    "Jika tidak hari ini mungkin minggu depan",
-    "Jika tidak minggu ini mungkin bulan depan",
-    "Jika tidak bulan ini mungkin tahun depan",
-    "Segala harapan kan datang yang kita impikan",
-    "Janganlah menyerah dulu waktu masih panjang",
-    "Ingat doa kita selalu yang tak pernah usang",
-    "Kita usahakan lagi sayang",
-    "Yakin waktunya kan datang"
-]
+    "won lebih tu gatel loh",
+    "laris soup yoooh",
+    "gak lalap tuh oh uwis mekso",
+    "deram najis sembari seplesoo",
+    "ai oubes bicendi, en lain",
+    "naik ayu su filem tigi sorakah",
+    "bisa napi.. hapines",
+    "kena gerah hapineees..",
+    "aneh opo bi nen njelimet sorene ri",
+    "ifen nih fel gatel arif kaum panik :v"
+    ]
 
 pause_words = {
-    "ini": 1, "depan": 1.5, "impikan": 1.0, "panjang": 1.0, "usang": 1.0, "sayang": 1.2,
+    "loh": 0.6, "yoooh": 1, "mekso": 0.7, "seplesoo": 0.7, "oubes":0.7, "bicendi": 0.6, "lain": 0.5, "sorakah": 1.0, "napi": 1.2, "hapines": 0.3,
 }
 
 pause_per_baris = {
-    3: {"datang": 1.0},
-    4: {"dulu": 0.8},
-    5: {"selalu": 1}
+    8: {
+        "ri": 0.1
+    }
 }
 
 slow_words = {}
 
 slow_per_baris = {
-    0: {"tidak": 0.1, "hari": 0.2, "depan": 0.1},
-    1: {"tidak": 0.1, "minggu":0.2, "depan": 0.1},
-    2: {"tidak": 0.1, "bulan": 0.2, "depan": 0.1},
-    3: {"harapan": 0.1, "kan": 0.1, "kita": 0.1, "impikan": 0.2},
-    4: {"menyerah": 0.2, "panjang": 0.1},
-    5: {"kita": 0.3, "usang": 0.1},
-    6: {"usahakan": 0.2, "sayang": 0.2},
+    1: {"yoooh": 0.2},
+    2: {"mekso": 0.1},
+    3: {"seplesoo": 0.1},
+    4: {"bicendi": 0.2, "lain": 0.1},
+    5: {"hapines": 0.1,},
+    7: {"opo": 0.1, "bi":0.1, "njelimet": 0.2, "sorene": 0.1},
     7: {"waktunya": 0.2, "kan": 0.1, "datang": 0.3}
 }
 
 baris_delays = { i: 0.0 for i in range(8) }
-baris_delays[7] = 3
+baris_delays[ 0
 
-double_lines_at = [6, 7]
+]
+
+double_lines_at = [0,1 , 2,3 , 6]
 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
